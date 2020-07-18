@@ -1,0 +1,74 @@
+/* <system section="theme" selected="block-memo"> */
+@import "/css/theme/block-memo/block-memo.css";
+/* </system> */
+.pager {
+    margin: 10px 0;
+}
+.pager a{
+    color: #FFF;
+    background-color: #009bc6;
+    padding: .2em 20px;
+    text-decoration: none;
+    margin: 0 1px;
+}
+.pager a:hover {
+    background-color: #7acbe1;
+}
+
+#menubar {
+    width: 100%;
+}
+#menubar ul {
+    display: table;
+    width: 100%;
+    margin: 20;
+    padding: 0;
+    background-color: #FFF;
+}
+#menubar li {
+    display: table-cell;
+    width: 20%;
+    padding: 0;
+    background-color: #009bc6;
+}
+#menubar li a {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #FFF;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+}
+#menubar li a:hover {
+    background-color: #7acbe1;
+}
+
+#content-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#wrapper {
+    background-color: #FDD;
+}
+#box2 {
+    background-color: #DDF;
+}
+#container, #footer {
+    width: 720px;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+#wrapper {
+    width: 480px;
+}
+#box2 {
+    width: 200px;
+}
+#blog-title-inner {
+    background-size: contain;
+}
