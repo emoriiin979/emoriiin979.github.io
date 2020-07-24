@@ -1,5 +1,5 @@
 strong {
-    font-weight: normal;
+    font-weight: bold;
     background: linear-gradient(transparent 60%, #ff6 60%);
 }
 
@@ -15,11 +15,30 @@ blockquote cite{
 }
 
 h3 {
-color: #333;
-padding: .5em 1em;
-margin-top: 40px;
-border-left: 8px solid #009bc6;
-background-color: #e6f0f0
+    color: #333;
+    padding: .5em 1em;
+    margin-top: 40px;
+    border-left: 8px solid #009bc6;
+    background-color: #e6f0f0
+}
+
+h5 {
+    position: relative;
+    color: #333;
+    text-shadow: 0 0 2px white;
+}
+h5:before {
+    content: "";
+    position: absolute;
+    background: #9de5ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 50%;
+    left: -10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
 }
 
 #content-inner {
@@ -28,18 +47,18 @@ background-color: #e6f0f0
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 @media (min-width: 768px) {
     #content-inner {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 }
